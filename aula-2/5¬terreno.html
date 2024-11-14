@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Terreno</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Terreno</h1>
+
+            <p>Informe tres números para calcular a area e o valor do terreno</p>
+
+            <label for="txt1">Largura terreno:</label><input type="number" id="numeroLargura"
+
+            <label for="txt2">Comprimento terreno:</label><input type="number" id="numeroComprimento"
+
+            <label for="txt3">Valor terreno:</label><input type="number" id="numeroValor"
+
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            //você irá programar aqui!
+
+            var txt1 = document.getElementById("numeroLargura").value;
+
+            var txt2 = document.getElementById("numeroComprimento").value;
+
+            var comprimento = parseFloat(txt2);
+
+            var largura = parseFloat(txt1)
+
+            var aream2 = largura * comprimento;
+
+            var aream2 = aream2 / 1;
+
+            var mensagem = "A área é de " + aream2;
+
+            alert(mensagem);
+
+            var txt3 = document.getElementById("numeroValor").value;
+
+            var valor = parseFloat(txt3);
+
+            var soma = aream2 * valor;
+
+            var valor = soma / 1;
+
+            var mensagem = "O valor do m2 é de R$" + valor;
+
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>

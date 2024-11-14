@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Medidor</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Medidor</h1>
+
+            <p>Digite o número da sua glicose atual para saber seu estado de saúde</p>
+
+            <label for="txt1">Quantidade de Glicose:</label><input type="number" id="quantidadeGlicose"
+            
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            //você irá programar aqui!
+
+            var quantidadeGlicoseTexto = document.getElementById("quantidadeGlicose").value;
+
+            var quantidadeGlicose = parseFloat(quantidadeGlicoseTexto);
+
+            var normalMg = 100;
+
+            var elevadoMg = 140;
+
+            var diabetesMg = 140;
+
+            if (quantidadeGlicose <= 100) {
+                alert("A sua glicose está normal " + quantidadeGlicose + " e voce está saúdavel");
+            }
+            else if (quantidadeGlicose > 100 && quantidadeGlicose <= 140) {
+                alert("Sua glicose está elevada " + quantidadeGlicose + " e voce precisa medicar");
+            }
+            else if (quantidadeGlicose > 140) {
+                alert("Infelizmente voce tem diabetes " + quantidadeGlicose);
+            }
+
+
+
+
+
+
+        }
+
+    </script>
+
+</body>
+</html>

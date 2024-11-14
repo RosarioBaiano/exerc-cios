@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exibir Ímpares</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Exibir Ímpares</h1>
+
+            <p></p>
+
+            <label for="txt1">Número Final:</label><input type="text" id="txtFinal"
+            
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Exibir</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var finalTexto = document.getElementById("txtFinal").value;
+
+            var final = parseInt(finalTexto);
+
+            var mensagem = "Os valores ímpares são: \r";
+
+            for (var i = 1; i <= final; i++) {
+
+                var resto = i % 2;
+
+                if (resto > 0) {
+
+                    mensagem = mensagem + i + "\r";
+                }
+
+            }
+
+            alert(mensagem);
+        }
+
+    </script>
+
+</body>
+</html>

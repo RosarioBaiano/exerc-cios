@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olá Mundo</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Olá Mundo</h1>
+
+            <p>Digite um número para receber a quantidade de olá mundo que desejas</p>
+
+            <label for="txt1">Quantidade de vezes:</label><input type="text" id="txtQuantidadeVezes"
+            
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Dizer Olá Mundo</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var quantidadeTexto = document.getElementById("txtQuantidadeVezes").value;
+
+            var quantidade = parseInt(quantidadeTexto);
+
+            for (var i = quantidade; i >= 1; i--) {
+                alert("Olá Mundo " + i);
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

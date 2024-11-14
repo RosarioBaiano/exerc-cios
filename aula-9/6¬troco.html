@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Troco</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Troco</h1>
+
+            <p>Parágrafo</p>
+
+            <lalabel for="txt1">Digite o preço unitario do produto:R$</label><input type="number" id="numeroUnitario"
+            
+            <label for="txt2">Digite a quantidade do produto:R$</label><input type="number" id="numeroQuantidade"
+
+            <label for="txt3">Digite o valor dado pelo cliente:R$</label><input type="number" id="numeroValor"
+
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Botão</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            //você irá programar aqui!
+
+            var txt1 = document.getElementById("numeroUnitario").value;
+
+            var txt2 = document.getElementById("numeroQuantidade").value;
+
+            var unitario = parseFloat(txt1);
+
+            var quantidade = parseFloat(txt2);
+
+            var compra = unitario * quantidade;
+
+            var txt3 = document.getElementById("numeroValor").value;
+
+            var troco = parseFloat(txt3);
+
+            var troco = troco - compra;
+                
+            var mensagem = "O troco do cliente é de R$ " + troco;
+            
+            alert(mensagem);
+      
+        }
+
+    </script>
+
+</body>
+</html>

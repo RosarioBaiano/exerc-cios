@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Consumo</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1></h1>
+
+            <p>Parágrafo</p>
+
+            <label for="txt1">Digite a distâñcia percorrida (em km):</label><input type="number" id="distanciaKm"
+            
+            <label for="txt2">Digite o total de combústivel gasto (em litro):</label><input type="number" id="combustivelGasto"
+
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var txt1 = document.getElementById("distanciaKm").value;
+
+            var txt2 = document.getElementById("combustivelGasto").value;
+
+            var distanciakm = parseFloat(txt1);
+
+            var combustivel = parseFloat(txt2);
+
+            var consumomedio = distanciakm / combustivel;
+            
+            var mensagem = "O consumo médio do veículo é de  " + consumomedio + "km por litro"
+
+            alert(mensagem);
+           
+
+        }
+
+    </script>
+
+</body>
+</html>

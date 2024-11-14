@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exibir Pares</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Exibir Pares</h1>
+
+            <p></p>
+
+            <label for="txt1">Valor Inteiro:</label><input type="text" id="txtInteiro"
+            
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">CalcularSomarPares</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var inteiroTexto = document.getElementById("txtInteiro").value;
+
+            var inteiro = parseInt(inteiroTexto);
+
+            var mensagem = "A soma dos números pares é: \r";
+
+            var soma = 0;
+
+            for (var i = 1; i <= inteiro; i++) {
+
+                if (i % 2 === 0) {
+                    soma += 1;
+                }
+            }
+            mensagem += soma;
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>

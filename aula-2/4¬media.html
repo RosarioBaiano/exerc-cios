@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Média</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Média</h1>
+
+            <p>Informe dois números abaixo para calcular o valor da média entre os dois números:</p>
+
+            <label for="txtCaixaDeTexto">Número 1:</label><input type="number" id="caixaNumero1"
+            
+            <label for="txtCaixaDeTexto">Número 2:</label><input type="number" id="caixaNumero2"
+
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            //   você irá programar aqui!
+
+            var caixaTexto1 = document.getElementById("caixaNumero1").value;
+
+            var numero1 = parseFloat(caixaTexto1);
+
+            var caixaTexto2 = document.getElementById("caixaNumero2").value;
+
+            var numero2 = parseFloat(caixaTexto2);
+
+            var soma = numero1 + numero2; 
+
+            var media = soma / 2; 
+            
+            var mensagem = "A média é " + media; 
+
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>
